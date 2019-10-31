@@ -83,3 +83,7 @@ allPs[8].textContent = siteContent["footer"]['copyright'];
 navItems.forEach((item) => {
   item.style.color = 'green';
 });
+
+const newLink1 = document.createElement('a');
+nav.appendChild(newLink1);
+newLink1.textContent = 'Appended';
