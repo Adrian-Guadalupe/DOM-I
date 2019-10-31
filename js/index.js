@@ -84,6 +84,14 @@ navItems.forEach((item) => {
   item.style.color = 'green';
 });
 
+const navBar = document.querySelector('nav');
 const newLink1 = document.createElement('a');
-nav.appendChild(newLink1);
+const newLink2 = document.createElement('a');
+
+navBar.appendChild(newLink1);
 newLink1.textContent = 'Appended';
+newLink1.style.color = 'green';
+
+navBar.prepend(newLink2);
+newLink2.textContent = 'Prepended';
+newLink2.style.color = 'green';
